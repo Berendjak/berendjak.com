@@ -1,0 +1,681 @@
+::-webkit-scrollbar {
+  width: .65em;
+  height: .65em; }
+
+::-webkit-scrollbar-track {
+  background: #E4E8F1; }
+
+::-webkit-scrollbar-thumb {
+  background-color: #389fb7; }
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #328EA3; }
+
+::-moz-selection {
+  background: #33CCff; }
+
+::selection {
+  background: #33CCff; }
+
+*, html, body {
+  margin: 0;
+  font-family: "Trebuchet MS", Helvetica, sans-serif; }
+
+body {
+  background: url(img/berend.jpg) fixed no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow-x: hidden; }
+
+section {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0; }
+
+.homeBody {
+  display: block;
+  flex-flow: row wrap;
+  justify-content: space-around; }
+
+figure:first-child {
+  padding: 15em 8em 5em 8em; }
+
+figure {
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  position: relative;
+  display: block;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  box-sizing: border-box;
+  width: 95%;
+  flex-basis: fit-content;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 1em auto;
+  padding: 5em 8em; }
+  figure .portList {
+    margin-top: 5em;
+    padding: 0;
+    list-style: none; }
+    figure .portList li {
+      position: relative;
+      display: block;
+      overflow: hidden;
+      height: 30em;
+      margin: 5vh auto; }
+      figure .portList li a {
+        color: black; }
+      figure .portList li section {
+        -webkit-transition: all 0.4s ease 0s;
+        -moz-transition: all 0.4s ease 0s;
+        -ms-transition: all 0.4s ease 0s;
+        -o-transition: all 0.4s ease 0s;
+        transition: all 0.4s ease 0s;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 0;
+        background: rgba(255, 255, 255, 0.6);
+        text-align: center;
+        border-top-left-radius: 100%;
+        border-top-right-radius: 100%; }
+        figure .portList li section h1 {
+          -webkit-transition: all 0.4s ease 0s;
+          -moz-transition: all 0.4s ease 0s;
+          -ms-transition: all 0.4s ease 0s;
+          -o-transition: all 0.4s ease 0s;
+          transition: all 0.4s ease 0s;
+          font-size: 0px;
+          letter-spacing: 2px; }
+        figure .portList li section p {
+          -webkit-transition: all 0.4s ease 0s;
+          -moz-transition: all 0.4s ease 0s;
+          -ms-transition: all 0.4s ease 0s;
+          -o-transition: all 0.4s ease 0s;
+          transition: all 0.4s ease 0s;
+          display: block;
+          margin: 0 auto;
+          font-size: 0px;
+          width: 70vw; }
+      figure .portList li:hover section {
+        height: 15em;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0; }
+      figure .portList li:hover h1 {
+        font-size: 2.5em;
+        font-size: calc(8vh*1.8em); }
+      figure .portList li:hover p {
+        font-size: 1.35em;
+        font-size: calc(6vh*1.3em); }
+    figure .portList .port1 {
+      background: url("img/fileBrowser.png"); }
+    figure .portList .port2 {
+      background: url("img/cobraSys.png") 50% 0; }
+    figure .portList .port3 {
+      background: url("img/slideShow.png") center; }
+  figure h1 {
+    flex: 1 100%;
+    letter-spacing: .4em;
+    font-size: 3em;
+    font-size: calc(6vh*2.8em); }
+  figure h2 {
+    font-size: 2em;
+    font-size: calc(10vh*1.8em);
+    letter-spacing: .1em; }
+  figure p {
+    flex: 2;
+    font-size: 1.2em; }
+  figure .pHome {
+    margin: 2em .5em; }
+  figure #infoBody {
+    display: block;
+    margin: 3.5em auto; }
+    figure #infoBody pre {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.2em;
+      font-size: calc(8vh*1em);
+      background: rgba(255, 255, 255, 0.4);
+      border-radius: 2px;
+      padding: .2em;
+      margin: .4em 0; }
+
+.backGrow {
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  position: fixed;
+  position: absolute;
+  right: 10vw;
+  top: 2vh;
+  top: 0;
+  display: block;
+  background: transparent;
+  z-index: 9; }
+
+.backVisible {
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  display: block;
+  background: rgba(33, 33, 33, 0.75);
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  cursor: zoom-out;
+  z-index: 999; }
+
+.headshot {
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  position: absolute;
+  right: 0;
+  top: 2vh;
+  height: 17.5em;
+  width: 17.5em;
+  overflow: hidden;
+  cursor: zoom-in;
+  z-index: 10; }
+
+.grow {
+  -webkit-transform: scale(3);
+  -moz-transform: scale(3);
+  -ms-transform: scale(3);
+  -o-transform: scale(3);
+  transform: scale(3);
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  display: block;
+  cursor: zoom-out;
+  position: fixed;
+  white-space: nowrap;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  white-space: nowrap;
+  margin: auto;
+  z-index: 1000; }
+
+nav {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  z-index: 100;
+  left: 0;
+  top: 1.8em; }
+  nav a {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; }
+
+ol {
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  display: block;
+  margin: 0; }
+  ol li {
+    -webkit-box-shadow: 0 0 4px #333;
+    -moz-box-shadow: 0 0 4px #333;
+    -ms-box-shadow: 0 0 4px #333;
+    -o-box-shadow: 0 0 4px #333;
+    box-shadow: 0 0 4px #333;
+    position: relative;
+    display: block;
+    list-style-type: none;
+    padding: 0 5em;
+    height: 90px;
+    line-height: 90px;
+    margin: 0;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    cursor: pointer; }
+    ol li h1 {
+      display: block;
+      text-align: center;
+      margin: auto;
+      font-size: 1.5em; }
+
+.ol-1 {
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  display: flex;
+  width: auto;
+  margin: 0 1.2em; }
+  .ol-1 .name {
+    position: relative;
+    background: rgba(0, 0, 0, 0.8);
+    cursor: default; }
+    .ol-1 .name h1 {
+      font-size: 2em;
+      font-size: calc(10vh*1.9em); }
+  .ol-1 .home {
+    background: rgba(0, 0, 0, 0.8); }
+    .ol-1 .home:after {
+      -webkit-transition: height 0.3s ease 0s;
+      -moz-transition: height 0.3s ease 0s;
+      -ms-transition: height 0.3s ease 0s;
+      -o-transition: height 0.3s ease 0s;
+      transition: height 0.3s ease 0s;
+      position: absolute;
+      display: block;
+      content: "";
+      background: #000;
+      background: black;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 0;
+      z-index: -1; }
+    .ol-1 .home:hover:after {
+      height: 100%; }
+
+.srink {
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  -webkit-transform: scale(0.75);
+  -moz-transform: scale(0.75);
+  -ms-transform: scale(0.75);
+  -o-transform: scale(0.75);
+  transform: scale(0.75); }
+
+.transition, .ol-2 .port, .ol-2 .home, .ol-2 .resume, .ol-2 .future, .ol-2 .contact {
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s; }
+
+.ol-2 li {
+  margin: 0 5em;
+  width: 15em; }
+.ol-2 .port {
+  position: absolute;
+  opacity: 0;
+  right: 15%;
+  top: 0;
+  height: 100%;
+  width: 90px;
+  background: url("img/message.png") no-repeat center; }
+.ol-2 .home {
+  position: absolute;
+  opacity: 0;
+  right: 15%;
+  top: 0;
+  height: 100%;
+  width: 90px;
+  background: url("img/home.png") no-repeat center; }
+.ol-2 .resume {
+  position: absolute;
+  opacity: 0;
+  right: 15%;
+  top: 0;
+  height: 100%;
+  width: 90px;
+  background: url("img/education.png") no-repeat center; }
+.ol-2 .future {
+  position: absolute;
+  opacity: 0;
+  right: 15%;
+  top: 0;
+  height: 100%;
+  width: 90px;
+  background: url("img/orientation.png") no-repeat center; }
+.ol-2 .contact {
+  position: absolute;
+  opacity: 0;
+  right: 15%;
+  top: 0;
+  height: 100%;
+  width: 90px;
+  background: url("img/people.png") no-repeat center; }
+.ol-2 .list-1 {
+  transform: scale(0) translateX(45%);
+  background: #33ccff;
+  -webkit-transition: background 0.3s ease, transform 0.1s ease 0s;
+  -moz-transition: background 0.3s ease, transform 0.1s ease 0s;
+  -o-transition: background 0.3s ease, transform 0.1s ease 0s;
+  transition: background 0.3s ease, transform 0.1s ease 0s;
+  border-radius: 1px; }
+  .ol-2 .list-1:hover div {
+    opacity: 1;
+    right: 0; }
+.ol-2 .list-1:hover {
+  background: #66d9ff; }
+.ol-2 .list-2 {
+  transform: scale(0) translateX(45%);
+  background: #3399ff;
+  -webkit-transition: background 0.3s ease, transform 0.1s ease 0.035s;
+  -moz-transition: background 0.3s ease, transform 0.1s ease 0.035s;
+  -o-transition: background 0.3s ease, transform 0.1s ease 0.035s;
+  transition: background 0.3s ease, transform 0.1s ease 0.035s;
+  border-radius: 1px; }
+  .ol-2 .list-2:hover div {
+    opacity: 1;
+    right: 0; }
+.ol-2 .list-2:hover {
+  background: #66b2ff; }
+.ol-2 .list-3 {
+  transform: scale(0) translateX(65%);
+  background: #3355ff;
+  -webkit-transition: background 0.3s ease, transform 0.1s ease 0.07s;
+  -moz-transition: background 0.3s ease, transform 0.1s ease 0.07s;
+  -o-transition: background 0.3s ease, transform 0.1s ease 0.07s;
+  transition: background 0.3s ease, transform 0.1s ease 0.07s;
+  border-radius: 1px; }
+  .ol-2 .list-3:hover div {
+    opacity: 1;
+    right: 0; }
+.ol-2 .list-3:hover {
+  background: #6680ff; }
+.ol-2 .list-4 {
+  transform: scale(0) translateX(40%);
+  background: #2222ff;
+  -webkit-transition: background 0.3s ease, transform 0.1s ease 0.105s;
+  -moz-transition: background 0.3s ease, transform 0.1s ease 0.105s;
+  -o-transition: background 0.3s ease, transform 0.1s ease 0.105s;
+  transition: background 0.3s ease, transform 0.1s ease 0.105s;
+  border-radius: 1px; }
+  .ol-2 .list-4:hover div {
+    opacity: 1;
+    right: 0; }
+.ol-2 .list-4:hover {
+  background: #5555ff; }
+.ol-2 .list-5 {
+  transform: scale(0) translateX(15%);
+  background: #0000dd;
+  -webkit-transition: background 0.3s ease, transform 0.1s ease 0.14s;
+  -moz-transition: background 0.3s ease, transform 0.1s ease 0.14s;
+  -o-transition: background 0.3s ease, transform 0.1s ease 0.14s;
+  transition: background 0.3s ease, transform 0.1s ease 0.14s;
+  border-radius: 1px; }
+  .ol-2 .list-5:hover div {
+    opacity: 1;
+    right: 0; }
+.ol-2 .list-5:hover {
+  background: #1111ff; }
+.ol-2 .visible1 {
+  transform: scale(1) translateX(20%); }
+.ol-2 .visible2 {
+  transform: scale(1) translateX(45%); }
+.ol-2 .visible3 {
+  transform: scale(1) translateX(60%); }
+.ol-2 .visible4 {
+  transform: scale(1) translateX(35%); }
+
+footer {
+  display: flex;
+  margin: 0 auto;
+  width: 95%;
+  height: 8em;
+  background: rgba(255, 255, 255, 0.8);
+  align-items: center;
+  justify-content: space-around; }
+  footer strong {
+    position: relative;
+    left: 10%;
+    display: block;
+    flex: 1 25%;
+    width: 1em;
+    font-size: 1.1em;
+    align-self: center;
+    margin: 0 auto; }
+  footer #face {
+    -webkit-transition: background 0.4s ease 0s;
+    -moz-transition: background 0.4s ease 0s;
+    -ms-transition: background 0.4s ease 0s;
+    -o-transition: background 0.4s ease 0s;
+    transition: background 0.4s ease 0s;
+    flex: 1 0;
+    background: url("img/faceBl.png") no-repeat center;
+    height: 64px;
+    width: 64px; }
+    footer #face:hover {
+      background: url("img/faceB.png") no-repeat center; }
+  footer #insta {
+    -webkit-transition: background 0.4s ease 0s;
+    -moz-transition: background 0.4s ease 0s;
+    -ms-transition: background 0.4s ease 0s;
+    -o-transition: background 0.4s ease 0s;
+    transition: background 0.4s ease 0s;
+    flex: 1 5%;
+    background: url("img/instaBl.png") no-repeat center;
+    height: 64px;
+    width: 64px; }
+    footer #insta:hover {
+      background: url("img/instaB.png") no-repeat center; }
+
+@media screen and (min-width: 1250px) {
+  .homeBody {
+    display: flex; }
+
+  .homeBody2 {
+    display: flex; } }
+@media screen and (max-width: 1050px) {
+  figure:first-child {
+    padding: 16em 1.5em 8em 1.5em; }
+
+  figure .portList li {
+    height: 15em; }
+    figure .portList li section {
+      height: 100%;
+      overflow-x: auto;
+      border-top-right-radius: 0;
+      border-top-left-radius: 0; }
+      figure .portList li section h1 {
+        font-size: 2em; }
+      figure .portList li section p {
+        font-size: 1.1em; }
+    figure .portList li:hover h1 {
+      font-size: 2em; }
+    figure .portList li:hover p {
+      font-size: 1.1em; }
+
+  .ol-1 .home:after {
+    height: 100%; }
+  .ol-1 .home:hover:after {
+    height: 100%; }
+
+  .ol-2 .port {
+    position: absolute;
+    opacity: 1;
+    right: 0%;
+    top: 0;
+    height: 100%;
+    width: 90px;
+    background: url("img/message.png") no-repeat center; }
+  .ol-2 .home {
+    position: absolute;
+    opacity: 1;
+    right: 0%;
+    top: 0;
+    height: 100%;
+    width: 90px;
+    background: url("img/home.png") no-repeat center; }
+  .ol-2 .resume {
+    position: absolute;
+    opacity: 1;
+    right: 0%;
+    top: 0;
+    height: 100%;
+    width: 90px;
+    background: url("img/education.png") no-repeat center; }
+  .ol-2 .contact {
+    position: absolute;
+    opacity: 1;
+    right: 0%;
+    top: 0;
+    height: 100%;
+    width: 90px;
+    background: url("img/people.png") no-repeat center; }
+
+  .portList {
+    /*        li{
+                position: relative;
+                display: block;
+                overflow: hidden;
+                height: 15em; 
+                margin: 5vh auto;
+    
+                section{height: 10em;}
+                h1{font-size:2em}
+                p{font-size:1.2em}
+    
+            }*/ }
+
+  figure {
+    padding: 2.5em 1.5em 8em 1.5em; }
+    figure .headshot {
+      height: 7.5em;
+      width: 7.5em; }
+    figure .grow {
+      -webkit-transform: scale(6);
+      -moz-transform: scale(6);
+      -ms-transform: scale(6);
+      -o-transform: scale(6);
+      transform: scale(6); } }
+@media screen and (max-width: 850px) {
+  figure h1, figure h2 {
+    letter-spacing: 2px; }
+
+  .headshot {
+    top: 8em;
+    left: 8em; }
+
+  .ol-1 {
+    padding: 0; }
+    .ol-1 li {
+      padding: 0 10vw; }
+    .ol-1 .home {
+      width: 10vw; }
+    .ol-1 .name {
+      width: 42vw; }
+
+  .ol-2 li {
+    margin: 0;
+    padding: 0 10vw; }
+  .ol-2 .list-1 {
+    transform: scale(0) translateX(0%);
+    background: #34ccff;
+    -webkit-transition: background 0.3s ease, transform 0.1s ease 0s;
+    -moz-transition: background 0.3s ease, transform 0.1s ease 0s;
+    -o-transition: background 0.3s ease, transform 0.1s ease 0s;
+    transition: background 0.3s ease, transform 0.1s ease 0s;
+    border-radius: 1px; }
+  .ol-2 .list-2 {
+    transform: scale(0) translateX(0%);
+    background: #3399ff;
+    -webkit-transition: background 0.3s ease, transform 0.1s ease 0s;
+    -moz-transition: background 0.3s ease, transform 0.1s ease 0s;
+    -o-transition: background 0.3s ease, transform 0.1s ease 0s;
+    transition: background 0.3s ease, transform 0.1s ease 0s;
+    border-radius: 1px; }
+  .ol-2 .list-3 {
+    transform: scale(0) translateX(0%);
+    background: #004060;
+    -webkit-transition: background 0.3s ease, transform 0.1s ease 0.05s;
+    -moz-transition: background 0.3s ease, transform 0.1s ease 0.05s;
+    -o-transition: background 0.3s ease, transform 0.1s ease 0.05s;
+    transition: background 0.3s ease, transform 0.1s ease 0.05s;
+    border-radius: 1px; }
+  .ol-2 .list-4 {
+    transform: scale(0) translateX(0%);
+    background: #043278;
+    -webkit-transition: background 0.3s ease, transform 0.1s ease 0.1s;
+    -moz-transition: background 0.3s ease, transform 0.1s ease 0.1s;
+    -o-transition: background 0.3s ease, transform 0.1s ease 0.1s;
+    transition: background 0.3s ease, transform 0.1s ease 0.1s;
+    border-radius: 1px; }
+  .ol-2 .visible1 {
+    transform: scale(1) translateX(0%); }
+  .ol-2 .visible2 {
+    transform: scale(1) translateX(0%); }
+  .ol-2 .visible3 {
+    transform: scale(1) translateX(0%); }
+  .ol-2 .visible4 {
+    transform: scale(1) translateX(0%); } }
+@media screen and (max-width: 500px) {
+  .ol-1 {
+    position: fixed;
+    padding: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto; }
+    .ol-1 li {
+      padding: 0 auto; }
+    .ol-1 .name {
+      justify-content: flex-end;
+      width: 80vw; }
+      .ol-1 .name h1 {
+        font-size: 1.7em; }
+    .ol-1 .home {
+      width: 20vw; }
+
+  .ol-2 {
+    margin-top: 3.88em;
+    padding: 0;
+    position: fixed;
+    left: 0;
+    right: 0; }
+    .ol-2 li {
+      left: 0;
+      right: 0;
+      width: 8vw;
+      padding: 0;
+      width: 100%; }
+
+  #infoBody pre {
+    flex-direction: column; } }
+@media screen and (max-height: 500px) {
+  .ol-2 li {
+    height: 18vh;
+    line-height: 18vh; } }
+
+/*# sourceMappingURL=main.css.map */

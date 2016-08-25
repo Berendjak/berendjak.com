@@ -1,0 +1,230 @@
+$bl: #ff876f;
+$up: #ff3333;
+
+*, html{
+    font-family: Tahoma, Geneva, sans-serif;
+    font: 1em;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: .65em;
+    height: .65em;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,.6);
+    &:hover{
+        background-color: rgba(0,0,0,.9);   
+    }
+}
+body{
+    overflow:none;
+    background: url(img/background.png) fixed center center; 
+}
+pre{
+    background: rgba(0,0,0,.6);
+    border-radius: 5px;
+    padding: .3em .3em;
+    transition: all .2s ease;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+    span{
+    }
+}
+
+a{
+    text-decoration: none;
+    color: $bl;
+}
+a:hover pre{
+    background: rgba(0,0,0,1);
+    transform: scale(1.05);  
+}
+a:active pre{
+    background: rgba(0,0,0,1);
+    transform: scale(.975);  
+}
+.sec1{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5%;
+    padding: 2.5%;
+    color: $bl;
+    border-radius: 5px;
+    font-size: 1.5em;
+    background: rgba(0,0,0,.8);
+    letter-spacing: .2em;
+
+    p{
+        font-size: .9em;
+    }
+}
+.secmid{
+    padding: 1%;
+    margin: 1.5% auto;
+    color: $bl;
+    border-radius: 5px;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    background: rgba(0,0,0,.6);
+    .midleft{
+        position: relative;
+        width: 44%;
+    }
+    .midright{
+        position: relative;
+        width: 56%;
+    }
+}
+#fileinfosm{
+    display: none;
+}
+.secbot{
+    display: flex;
+    justify-content: space-around;
+
+    .sec2{
+        position: relative;
+        display: block;
+        height: 60vh;;
+        overflow-y: auto;
+        width: 30%;
+        margin:1% 2.5%;
+        padding:0 2%;
+
+        img{
+            max-height: 64px;
+            max-width: 64px;
+        }
+    }
+    .sec3{
+        position: relative;
+        display: block;
+        margin: 2.5% 5% 0 5%;
+        padding:1% 2.5%;
+        height: fit-content;
+        max-height: 55vh;
+        overflow: none;
+        width: 50%;
+        font-size: 1.2em;
+        word-break:break-all;
+
+
+        img{
+            max-height: 40%;
+            max-width: 60%;
+        }
+        a{
+            position: relative;
+            color:$up;
+            font-size: 1.35em;
+            -webkit-animation: update .6s both;
+            animation: update .6s;
+            margin: 0 auto;
+            &:after{
+                position: absolute;
+                display: block;
+                content: "";
+                background:$up;
+                bottom: -10%;
+                left: 25%;
+                height: 2px;
+                width: 50%;
+                transition: all .4s ease;
+            }
+            &:hover:after{
+                width: 100%;
+                left: 0;
+                bottom: 50%;
+                transform: rotate(45deg);
+            }
+            &:before{
+                position: absolute;
+                display: block;
+                content: "";
+                background:$up;
+                top: 0;
+                left: 25%;
+                height: 2px;
+                width: 50%;
+                transition: all .4s ease;
+            }
+            &:hover:before{
+                width: 100%;
+                left: 0;
+                top: 50%;
+                transform: rotate(-45deg);
+            }
+        }
+        textarea{
+            background: rgba(255,255,255,.6);
+            border: none;
+            height: 20em;
+            width: 100%;
+            transition: background .2s ease;
+
+            &:focus{
+                background: rgba(255,255,255,1)
+            }
+        }
+        input{
+            padding: .75em 1.5em;
+            margin: .5em 1em;
+            cursor: pointer;
+            background: rgba(0,0,0,.8);
+            border: none;
+            font-size: .85em;
+            border-radius: 3px;
+            transition: background .4s ease, transform .2s ease;
+            color: white;
+
+            &:hover{
+                background: rgba(0,0,0,.9);
+            }
+            &:active{
+                transform: scale(.9) 
+            }
+        }
+    }
+}
+@-webkit-keyframes update{
+    from{font-size: 150px;}
+    to{font-size: 1.35em;}
+}
+@media only screen and(max-width:56.25em){
+    .secbot{
+        display: block;
+        justify-content: none;
+        .sec2{
+            width: 90%;  
+            pre{
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+        .sec3{
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+
+    .midleft{
+        width: 100%;
+    }
+    .midright{
+        display: none
+    }
+
+    #fileinfosm{
+        display: block;
+        width: 90%;
+    }
+}
+

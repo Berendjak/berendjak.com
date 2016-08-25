@@ -1,0 +1,192 @@
+*, html {
+  font-family: Tahoma, Geneva, sans-serif;
+  font: 1em;
+  margin: 0; }
+
+::-webkit-scrollbar {
+  width: .65em;
+  height: .65em; }
+
+::-webkit-scrollbar-track {
+  background: transparent; }
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.6); }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.9); }
+
+body {
+  overflow: hidden;
+  background: url(img/background.png) fixed center center; }
+
+pre {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  padding: .3em .3em;
+  transition: all .2s ease;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2em; }
+
+a {
+  text-decoration: none;
+  color: #fff; }
+
+a:hover pre {
+  background: black;
+  transform: scale(1.05); }
+
+a:active pre {
+  background: black;
+  transform: scale(0.975); }
+
+.sec1 {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5%;
+  padding: 2.5%;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 1.5em;
+  background: rgba(0, 0, 0, 0.8);
+  letter-spacing: .2em; }
+  .sec1 p {
+    font-size: .9em; }
+
+.secmid {
+  padding: 1%;
+  margin: 1.5% auto;
+  color: #fff;
+  border-radius: 5px;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  background: rgba(0, 0, 0, 0.6); }
+  .secmid .midleft {
+    position: relative;
+    width: 44%; }
+  .secmid .midright {
+    position: relative;
+    width: 56%; }
+
+#fileinfosm {
+  display: none; }
+
+.secbot {
+  display: flex;
+  justify-content: space-around; }
+  .secbot .sec2 {
+    position: relative;
+    display: block;
+    height: 60vh;
+    overflow-y: auto;
+    width: 30%;
+    margin: 1% 2.5%;
+    padding: 0 2%; }
+    .secbot .sec2 img {
+      max-height: 64px;
+      max-width: 64px; }
+  .secbot .sec3 {
+    position: relative;
+    display: block;
+    margin: 2.5% 5% 0 5%;
+    padding: 1% 2.5%;
+    height: fit-content;
+    max-height: 55vh;
+    overflow: none;
+    width: 50%;
+    font-size: 1.2em;
+    word-break: break-all; }
+    .secbot .sec3 img {
+      max-height: 40%;
+      max-width: 60%; }
+    .secbot .sec3 a {
+      position: relative;
+      color: #ff3333;
+      font-size: 1.35em;
+      -webkit-animation: update .6s both;
+      animation: update .6s;
+      margin: 0 auto; }
+      .secbot .sec3 a:after {
+        position: absolute;
+        display: block;
+        content: "";
+        background: #ff3333;
+        bottom: -10%;
+        left: 25%;
+        height: 2px;
+        width: 50%;
+        transition: all .4s ease; }
+      .secbot .sec3 a:hover:after {
+        width: 100%;
+        left: 0;
+        bottom: 50%;
+        transform: rotate(45deg); }
+      .secbot .sec3 a:before {
+        position: absolute;
+        display: block;
+        content: "";
+        background: #ff3333;
+        top: 0;
+        left: 25%;
+        height: 2px;
+        width: 50%;
+        transition: all .4s ease; }
+      .secbot .sec3 a:hover:before {
+        width: 100%;
+        left: 0;
+        top: 50%;
+        transform: rotate(-45deg); }
+    .secbot .sec3 textarea {
+      background: rgba(255, 255, 255, 0.6);
+      border: none;
+      height: 20em;
+      width: 100%;
+      transition: background .2s ease; }
+      .secbot .sec3 textarea:focus {
+        background: white; }
+    .secbot .sec3 input {
+      padding: .75em 1.5em;
+      margin: .5em 1em;
+      cursor: pointer;
+      background: rgba(0, 0, 0, 0.8);
+      border: none;
+      font-size: .85em;
+      border-radius: 3px;
+      transition: background .4s ease, transform .2s ease;
+      color: white; }
+      .secbot .sec3 input:hover {
+        background: rgba(0, 0, 0, 0.9); }
+      .secbot .sec3 input:active {
+        transform: scale(0.9); }
+
+@-webkit-keyframes update {
+  from {
+    font-size: 150px; }
+  to {
+    font-size: 1.35em; } }
+@media only screen and (max-width: 56.25em) {
+  .secbot {
+    display: block;
+    justify-content: none; }
+    .secbot .sec2 {
+      width: 90%; }
+      .secbot .sec2 pre {
+        width: 80%;
+        margin: 0 auto; }
+    .secbot .sec3 {
+      width: 90%;
+      margin: 0 auto; }
+
+  .midleft {
+    width: 100%; }
+
+  .midright {
+    display: none; }
+
+  #fileinfosm {
+    display: block;
+    width: 90%; } }
+
+/*# sourceMappingURL=main.css.map */
